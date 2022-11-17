@@ -252,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
+    max-width: 278px;
 
     margin-top: 132px;
     margin-bottom: 100px;
@@ -303,7 +304,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-size: 32px;
     line-height: 50px;
-    margin-top: 55px;
 }
 .text_moved{
     padding-top: 50px;
@@ -321,7 +321,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 64px;
     line-height: 77px;
     text-align: center;
-    margin-top: 55px;
 }
 .num_first::after{
     position: absolute;
