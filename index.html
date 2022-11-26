@@ -6,15 +6,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FinOpp</title>
 </head>
 <body>
     <main class="main">
-        <img src="img/star1.svg" alt="" class="star">
-        <img src="img/star2.svg" alt="" class="star">
-        <img src="img/star3.svg" alt="" class="star">
         <div class="container">
             <!--Header Start-->
             <div class="header">
@@ -24,23 +22,25 @@
                     </a>
                     <div class="logo__text">Financial Opportunities</div>
                 </div>
-                <form action="#" class="search__form">
-                    <label class="search__label"><img src="img/search.svg" alt=""></label>
-                    <input type="text" class="search__field">
-                </form> 
                 <ul class="header__menu">
-                    <li class="menu__item">Функции</li>
-                    <li class="menu__item">О нас</li>
-                    <li class="menu__item">Тарифы</li>
-                    <li class="menu__item">Отзывы</li>
+                    <li class="menu__item"><a href="#">Функции</a></li>
+                    <li class="menu__item"><a href="#">О нас</a></li>
+                    <li class="menu__item"><a href="#">Тарифы</a></li>
+                    <li class="menu__item"><a href="#">Отзывы</a></li>
                 </ul>
                 <a href="#" class="dark__switch"><img src="img/dark.svg" alt=""></a>
                 <button class="header__button btn">Войти</button>
+                <div class="burger">
+                    <span class="burger__item">menu</span>
+                </div>
             </div>
             <!--Header End-->
 
             <!--Main Content Start-->
             <div class="main__content">
+                <img src="img/star1.svg" alt="" class="star">
+                <img src="img/star2.svg" alt="" class="star">
+                <img src="img/star3.svg" alt="" class="star">
                 <div class="main__title">
                     Financial Opportunities
                 </div>
@@ -49,11 +49,67 @@
                     <p>Функционал и интерфейс платформы подстраивается под Вас. Вы получите всю необходимую информацию на месте. </p>
                 </div>
                 <button class="main__button btn">Демоверсия</button>
+                
             </div>
             <!--Main Content End-->
         </div>
         <img class="main__bg-img" src="img/main_card.svg" alt="">
     </main>
+
+    <!--Info Start-->
+    <section class="info">
+        <div class="container">
+            <!--Info title-->
+            <div class="info__content">
+                <!--Info item 1-->
+                <div class="info__item">
+                    <div class="info__text">
+                        <div class="info__title">
+                            Всегда забываете об оплате кредитов и долгов?
+                        </div>
+                        <div class="info__subtitle">
+                            Автоматическое напоминание о платежах, долгах и просрочках 
+                        </div>
+                    </div>
+                    <div class="info__num num_first">
+                        1
+                    </div>
+                    <img src="img/info/info_img1.svg" alt="" class="info__img">
+                </div>
+                <!--Info item 2-->
+                <div class="info__item">
+                    <img src="img/info/info_img2.svg" alt="" class="info__img">
+                    <div class="info__num info_num2">
+                        2
+                    </div>
+                    <div class="info__text text_moved">
+                        <div class="info__title">
+                            Не можете накопить на отпуск?
+                        </div>
+                        <div class="info__subtitle">
+                            Избавьтесь от “лишних” трат, найдите свободные деньги и сформируйте накопления для достижения финансовых целей.  
+                        </div>
+                    </div>
+                </div>
+                <!--Info item 3-->
+                <div class="info__item">
+                    <div class="info__text">
+                        <div class="info__title">
+                            Нет мотивации достигать целей?
+                        </div>
+                        <div class="info__subtitle">
+                            Наша платформа поможет достичь финансовой цели  и вы сможете получить приятную награду в виде медали.  
+                        </div>
+                    </div>
+                    <div class="info__num">
+                        3
+                    </div>
+                    <img src="img/info/info_img3.svg" alt="" class="info__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Info END-->
 
     <!--Functions Start-->
     <section class="functions">
@@ -96,14 +152,14 @@
                     <div class="functions__item top-cards">
                         <div class="card__container">
                             <img src="img/functions cards/icon-for-card3.svg" alt="" class="functions__icon">
-                        <div class="functions__name">
-                            Расходы
-                        </div>
-                        <div class="functions__text">
-                            <p>Планируйте свои расходы</p>
-                            <p>с точостью до 1 дня</p>
-                            <p>Картинка всех расходов на конкретную дату всегда перед глазами</p>
-                        </div>
+                            <div class="functions__name">
+                                Расходы
+                            </div>
+                            <div class="functions__text">
+                                <p>Планируйте свои расходы</p>
+                                <p>с точностью до 1 дня</p>
+                                <p>Картинка всех расходов на конкретную дату всегда перед глазами</p>
+                            </div>
                         </div>
                     </div>
                     <!--Functions Card 4-->
@@ -114,7 +170,7 @@
                             Аналитика
                         </div>
                         <div class="functions__text">
-                            <p>Будьте в курсе последних новостей с финансовых рынко</p> 
+                            <p>Будьте в курсе последних новостей с финансовых рынков</p> 
                             <p>Смотрите свои отчеты в удобном для вас виде  </p>
                         </div>
                         </div>
@@ -149,59 +205,5 @@
         </div>
     </section>
     <!--Functions END-->
-    <!--Info Start-->
-    <section class="info">
-        <div class="container">
-            <!--Info title-->
-            <div class="info__content">
-                <!--Info item 1-->
-                <div class="info__item">
-                    <div class="info__text">
-                        <div class="info__title">
-                            Всегда забываете об оплате кредитов и долгов?
-                        </div>
-                        <div class="info__subtitle">
-                            Автоматическое напоминание о платежах, долгах и просрочках 
-                        </div>
-                    </div>
-                    <div class="info__num num_first">
-                        1
-                    </div>
-                    <img src="img/info/info_img1.svg" alt="" class="info__img">
-                </div>
-                <!--Info item 2-->
-                <div class="info__item">
-                    <img src="img/info/info_img2.svg" alt="" class="info__img">`
-                    <div class="info__num">
-                        2
-                    </div>
-                    <div class="info__text text_moved">
-                        <div class="info__title">
-                            Не можете накопить на отпуск?
-                        </div>
-                        <div class="info__subtitle">
-                            Избавьтесь от “лишних” трат, найдите свободные деньги и сформируйте накопления для достижения финансовых целей.  
-                        </div>
-                    </div>
-                </div>
-                <!--Info item 3-->
-                <div class="info__item">
-                    <div class="info__text">
-                        <div class="info__title">
-                            Нет мотивации достигать целей?
-                        </div>
-                        <div class="info__subtitle">
-                            Наша платформа поможет достичь финансовой цели  и вы сможете получить приятную награду в виде медали.  
-                        </div>
-                    </div>
-                    <div class="info__num">
-                        3
-                    </div>
-                    <img src="img/info/info_img3.svg" alt="" class="info__img">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Info END-->
 </body>
 </html>
