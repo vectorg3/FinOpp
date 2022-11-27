@@ -373,10 +373,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 65px;
     }
     .logo__link{
-        font-size: 20px;
-    }
-    .logo__text{
-        font-size: 13px;
+        display: block;
     }
     .header__menu{
         margin-right: 5px;
